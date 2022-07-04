@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Application
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student ID</label><label class="validation-error hide" id="studentidValidationError"></label>
+                        <input type="number" name="studentid" id="studentid">
+                    </div>
+                    <div>
+                        <label>Student First Name</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div>
+                        <label>Student Last Name</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <label>Student Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label>Student Program</label>
+                        <input type="text" name="program" id="program">
+                    </div>
+                    <div>
+                      <label>Student Country</label>
+                      <input type="text" name="coutry" id="country">
+                  </div>
+                    <div>
+                        <label>Student Marital Status</label>
+                        <select id="status">
+                          <option> Married </option>
+                          <option> Unmarried </option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div><br>
+                </form>
+            </td>
+            <br>
+          </tr>
+            <td>
+              <hr>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Student Id</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Address</th>
+                            <th>Program</th>
+                            <th>Martial status</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
